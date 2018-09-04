@@ -22,11 +22,12 @@ function viewCart() {
          var viewItems = []
 
          for (let i = 0; i < item.length; i++)
-         if (i = 0){
-         viewItems.push(`${cart[itemName]} at $${cart['itemPrice']}`)
-                  }
-         else{
+         if (i === cart.length - 1 && i != 0 )
+         {
          viewItems.push(`and ${cart['itemName']} at $${cart['itemPrice']}`)
+         }
+         else{
+              viewItems.push(`${cart[itemName]} at $${cart['itemPrice']}`)
              }
        }
     return `In your cart, you have ${viewItems.join(', ')}.`
