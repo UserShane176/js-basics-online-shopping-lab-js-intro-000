@@ -27,7 +27,7 @@ function viewCart() {
          viewItems.push(`and ${cart[i]['itemName']} at $${cart[i]['itemPrice']}`)
          }
          else{
-              viewItems.push(`${cart[i][itemName]} at $${cart[i]['itemPrice']}`)
+              viewItems.push(`${cart[i]['itemName']} at $${cart[i]['itemPrice']}`)
              }
        }
     return `In your cart, you have ${viewItems.join(', ')}.`
