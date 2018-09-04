@@ -21,7 +21,7 @@ function viewCart() {
   else {
          var viewItems = []
 
-         for (let i = 0; i < cart.length; i++)
+         for (let i = 0; i < cart.length; i++){
          if (i === cart.length - 1 && i != 0 )
          {
          viewItems.push(`and ${cart['itemName']} at $${cart['itemPrice']}`)
@@ -31,6 +31,7 @@ function viewCart() {
              }
        }
     return `In your cart, you have ${viewItems.join(', ')}.`
+  }
 }
 
 function total() {
