@@ -50,11 +50,11 @@ function removeFromCart(item) {
           removed.push(cart.splice(i,1))
          }
          {
-         if (removed.length === 0) 
+         if (removed.length === 0)
          return "the item is not in your cart"
          }
          {
-         else 
+         else
          return cart
          }
 }
