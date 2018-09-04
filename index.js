@@ -51,12 +51,11 @@ function removeFromCart(item) {
           removed.push(cart.splice(i,1))
           return cart
           }
-        }
+      }
           if (removed.length === 0)
           {
           return "That item is not in your cart."
           }
-        
 }
 
 function placeOrder(cardNumber) {
